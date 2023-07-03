@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    </head>
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Quotes</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="quote-text">
+       <p><i class="bi bi-chat-left-quote"></i>
+        <span id="quote"></span></p>
+      </div>
+
+      <div class="author">
+        <p><i class="bi bi-pen-fill"></i><span id="author"></span></p>
+      </div>
+
+      <div class="button-container">
+        <button id="new-quote" onclick="getQuotes()">New Quote</button>
+      </div>
+    </div>
+    <div class="loader" id="loader" hidden></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
