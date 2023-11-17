@@ -36,7 +36,9 @@ body {
 .long-text {
   font-size: 2.25rem;
 }
-
+h1{
+  color: orange;
+}
 .author {
   font-size: 2.25rem;
   font-style: italic;
@@ -47,7 +49,8 @@ body {
   margin-top: 15px;
   display: flex;
   text-align: center;
-  justify-content: right;
+  justify-content: space-between;
+
 }
 
 button {
@@ -89,4 +92,12 @@ button:active {
   .quote-text {
     font-size: 2.25rem;
   }
+}
+
+.whatsapp-button:hover {
+  color:#128c7e;
+}
+
+.fa-whatsapp {
+  font-size: 1.5rem;
 }

@@ -8,13 +8,21 @@ let newQuotebtn = document.getElementById("new-quote");
 
 let response = [];
 
+
 async function getQuotes() {
-    let random = Math.ceil(Math.random() * 1644)
+    let random = Math.ceil(Math.random() * 16)
 
     let data= await fetch("https://type.fit/api/quotes")
     response = await data.json();
-    (response[random].text.length > 150) , Quote.innerText = response[random].text;
-        (!response[random].author) , author.innerText = response[random].author;
+// console.log(response)
+
+     Quote.innerText = response[random].text;
+     author.innerText = response[random].author;
+}
+function shareonWhatsapp() {
+    let whatsappUrl = `whatsapp://send?text=${Quote.innerText} - ${author.innerText}`
+    window.open(whatsappUrl);
+
 }
 getQuotes();
 
